@@ -1,0 +1,69 @@
+.praemie-thumbnail {
+  padding-bottom: 100%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #dadbdc;
+}
+
+article {
+  margin-top: 10px;
+  &.praemie {
+    margin-top: 20px;
+  }
+}
+
+.entry-title {
+  font-size: $font-size-h5;
+  line-height: 1.2;
+  &.event {
+    font-size: 1.2rem;
+  }
+}
+
+.slick-active i {
+  color: #58585a !important;
+}
+
+.slick-list {
+  article & {
+    border: 1px solid #d9dadb;
+  }
+}
+
+.slick-next, .slick-prev {
+  top: initial;
+  bottom: -55px;
+  z-index: 100;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-dots {
+  bottom: -10px;
+  li {
+    font-size: 20px;
+    margin: 0 1.5px;
+  }
+}
+
+.previous {
+  display: block;
+  color: $body-color;
+}
+
+.border-top-solid {
+  border-top: 2px solid #58595b;
+}
+
+html [type=button] {
+  &[class^="ultsl-"], &[class*=" ultsl-"] {
+    -webkit-appearance: initial;
+  }
+}

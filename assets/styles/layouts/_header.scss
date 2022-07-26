@@ -1,0 +1,34 @@
+body > header {
+  padding-top: 12px;
+  font-size: .917rem;
+}
+
+.navbar-nav .nav-link {
+  letter-spacing: .21em;
+  color: #58585a;
+  .navbar-toggleable-md & {
+    @include media-breakpoint-up(lg) {
+      padding-left: .7rem;
+      padding-right: .7rem;
+    }
+  }
+}
+
+#language_code_selector {
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    right: 21px;
+    top: 0;
+  }
+  a {
+    color: #58585a;
+    &:hover, &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+.custom-logo-link img {
+  margin-top: 17px;
+  margin-bottom: 8px;
+}

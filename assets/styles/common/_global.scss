@@ -1,0 +1,94 @@
+p {
+  margin-bottom: 1.4rem;
+}
+
+.widget {
+  @extend .col-sm;
+}
+
+.sidebar-bgcolor {
+  background-color: #ebe9e9;
+  padding-top: 20px;
+}
+
+.vc_row:not(.vc_inner):not([data-vc-full-width]) {
+  @extend .container;
+}
+
+.vc_row:not(.vc_inner) {
+  &:not([data-vc-full-width]) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &[data-vc-full-width] {
+    body:not(.single-event) & {
+      left: 0 !important;
+      padding-left: 0 !important;
+    }
+  }
+}
+
+.list-inline-item:not(:last-child){
+  margin-right: 6px;
+  footer & {
+    margin-right: 12px;
+  }
+  &::after {
+    content: ' |';
+    margin-left: 6px;
+    footer & {
+      margin-left: 5px;
+    }
+  }
+}
+
+.wpb_text_column ul {
+  padding-left: .8em;
+  line-height: 1.4;
+}
+
+body > {
+  header, footer {
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+/*
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 75px;
+  > footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    line-height: 60px;
+  }
+}
+*/
+
+/* Sticky footer with dynamic height */
+html {
+  height: 100%;
+  font-size: 14.76px;
+}
+
+body {
+  background: #ffffff;
+  line-height: 1.37;
+  @include media-breakpoint-up(md) {
+    display: flex;
+    flex-flow: column;
+    > .wrap {
+      min-height: 100vh;
+    }
+  }
+  > footer {
+    margin-top: auto;
+  }
+}

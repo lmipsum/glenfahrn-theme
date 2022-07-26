@@ -1,0 +1,8 @@
+body > footer {
+  background-color: #1a181c;
+  color: $white;
+  letter-spacing: 0.07em;
+  a, a:focus, a:hover {
+    color: inherit;
+  }
+}

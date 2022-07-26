@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i|Open+Sans&subset=latin-ext');
+$body-color: #58585a;
+
+$spacer:   1rem !default;
+
+//$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       'Noto Serif', serif;
+$font-family-base:        $font-family-serif;
+
+$font-size-h2: 2.37rem;
+$font-size-h3: 2rem;
+$font-size-h5: 1.4rem;
+$small-font-size: 75% !default;
+$headings-line-height:   1.2;
+$headings-margin-bottom: ($spacer * 1.8);
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        //xl: 1140px
+);
+
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+// Colors
+$brand-primary:         #c6a558;
+
+$input-bg: #eae9e9;
+$input-color: $body-color;
+$input-btn-border-width: 0;
+$border-radius: 0;
+
+$form-group-margin-bottom: .55rem;
+$input-padding-y: .6rem;
+$input-padding-x: .4rem;
